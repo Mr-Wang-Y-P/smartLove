@@ -180,7 +180,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useRoute } from "vue-router";
 import { ref, nextTick, onMounted } from "vue";
 import Recorder from "recorder-core";
