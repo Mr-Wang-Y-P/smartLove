@@ -19,7 +19,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const onClickLeft = () => history.back();
 </script>
 

@@ -134,7 +134,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { getAreaAction, getText, addText, updateLike } from "@/util/action";
@@ -149,9 +149,7 @@ const finished = ref(false);
 const loading = ref(false);
 const jumpRouter = (name) => {
   console.log(showAnswer.value);
-  // if(!showAnswer) {
   router.push(name);
-  // }
 };
 const data = ref([]);
 onMounted(async () => {

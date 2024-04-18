@@ -82,7 +82,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 import { ref } from "vue";
 import { areaList } from "@vant/area-data";
 import { Register } from "@/util/user";

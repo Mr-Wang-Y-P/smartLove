@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 import { ref } from "vue";
 import { Login } from "@/util/user";
 

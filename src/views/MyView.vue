@@ -71,7 +71,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 import { ref, onMounted } from "vue";
 import ClipboardJS from "clipboard";
 import { useRouter } from "vue-router";

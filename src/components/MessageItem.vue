@@ -16,15 +16,15 @@ const router = useRouter()
 const currentUserNo = Number(localStorage.getItem('userNo'))
 const props = defineProps({
     message: {
-        type: Object as PropType<{  name: string , time: string,avatar:string ,content:string}>,
+        type: Object,
         required: true
     }
 })
-const formatTime = (time: string) => {
+const formatTime = (time) => {
     const date = new Date(time);
     return date.toLocaleString();
 }
-const jumpPage = (sessionNo: string,talkNo: string,userNo:string) => {
+const jumpPage = (sessionNo,talkNo,userNo) => {
     if(talkNo != currentUserNo){
         router.push(`/messageChat/${sessionNo}/${talkNo}`)
     }
